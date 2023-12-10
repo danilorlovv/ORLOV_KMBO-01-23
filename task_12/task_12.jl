@@ -47,7 +47,7 @@ function count_along!(robot, side)
     return counter
 end
 
-function task11!(robot)
+function task12!(robot)
     back_ost = numsteps_along!(robot, West)
     back_nord = numsteps_along!(robot, Sud)
     counter = 0
@@ -69,4 +69,4 @@ function task11!(robot)
     print(counter)
 end
 
-task11!(robot)
+task12!(robot)
