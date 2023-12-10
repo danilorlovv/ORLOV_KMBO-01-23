@@ -1,4 +1,5 @@
 using HorizonSideRobots
+
 robot = Robot("maps/task_11.sit", animate = true)
 
 function try_move!(robot, side)
