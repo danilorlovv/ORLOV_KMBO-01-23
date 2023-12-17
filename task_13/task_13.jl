@@ -48,11 +48,12 @@ end
 function snake!(robot, start_side, ortogonal_side, k)
     side = start_side
     while true
-        k = chess!(robot, side, k + 1)
+        k = chess!(robot, side, k)
         if isborder(robot, ortogonal_side)
             break
         end
         move!(robot, ortogonal_side)
+        k = k % 2 + 1
         side = inverse(side)
     end
 end
@@ -61,9 +62,9 @@ function task13!(robot)::Nothing
     back_ost = numsteps_along!(robot, West)
     back_nord = numsteps_along!(robot, Sud)
     if (back_ost + back_nord) % 2 == 0
-        snake!(robot, Ost, Nord, 1)
-    else
         snake!(robot, Ost, Nord, 0)
+    else
+        snake!(robot, Ost, Nord, 1)
     end
     along!(robot, West)
     along!(robot, Sud)
