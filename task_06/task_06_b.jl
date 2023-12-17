@@ -40,7 +40,7 @@ function go_inverse(move)
     end
 end
 
-function task6b()
+function task6b!()
     for i in [[Ost, Nord], [West, Sud]]
         base = corner_side(i[1], i[2])
         deviation_fix(base[1])
@@ -49,4 +49,4 @@ function task6b()
     end
 end
 
-task6b()
+task6b!()
