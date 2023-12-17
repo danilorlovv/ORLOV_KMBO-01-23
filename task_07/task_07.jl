@@ -1,6 +1,6 @@
 using HorizonSideRobots
 
-r = Robot("maps/task_7.sit", animate = true)
+r = Robot("maps/task_07.sit", animate = true)
 
 function task7!(robot)
     while isborder(robot, Nord)

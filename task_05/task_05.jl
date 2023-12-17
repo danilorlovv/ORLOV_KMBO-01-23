@@ -1,6 +1,6 @@
 using HorizonSideRobots
 
-r = Robot("maps/task_5.sit", animate = true)
+r = Robot("maps/task_05.sit", animate = true)
 
 function along!(robot, direct)::Nothing
     while !isborder(robot, direct)

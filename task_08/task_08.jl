@@ -1,6 +1,6 @@
 using HorizonSideRobots
 
-r = Robot("maps/task_8.sit", animate = true)
+r = Robot("maps/task_08.sit", animate = true)
 
 function task8!(robot)
     sides = [Nord, West, Sud, Ost, Nord]
